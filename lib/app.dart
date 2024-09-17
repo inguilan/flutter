@@ -1,16 +1,21 @@
 import 'package:flutter/material.dart';
-import 'screens/home_screen.dart';
+import 'screens/shopping_list_screen.dart';
 
 class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Cafiarandia',
+      debugShowCheckedModeBanner: false,
+      title: 'Palmicafé',
       theme: ThemeData(
-        primarySwatch: Colors.brown,
+        primarySwatch: Colors.blueGrey,
+        hintColor: Colors.redAccent,
         visualDensity: VisualDensity.adaptivePlatformDensity,
+        useMaterial3: true,
       ),
-      home: HomeScreen(),
+      home: const ShoppingListScreen(),
     );
   }
 }

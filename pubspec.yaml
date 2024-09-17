@@ -5,14 +5,15 @@ publish_to: 'none' # Remove this line if you wish to publish to pub.dev
 version: 1.0.0+1
 
 environment:
-  sdk: ^3.5.0
+  sdk: ">=3.5.0 <4.0.0" # Asegúrate de usar un rango compatible con la versión de Flutter que estás utilizando
 
 dependencies:
   flutter:
     sdk: flutter
 
   cupertino_icons: ^1.0.8
-  badges: ^2.0.0  # Añade esta línea para el paquete badges
+  badges: ^2.0.0 # Paquete para mostrar badges en la aplicación
+  flutter_rating_bar: ^4.0.1
 
 dev_dependencies:
   flutter_test:
@@ -22,7 +23,10 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
-  # Elimina o comenta la sección assets si la tienes
-  # assets:
-  #   - images/a_dot_burr.jpeg
-  #   - images/a_dot_ham.jpeg
+  assets:
+    - assets/images/cafe_arabica.jpg
+    - assets/images/cafe_robusta.jpg
+    - assets/images/cafe_colombia.jpg
+    - assets/images/cafe_brasil.jpg
+    - assets/images/cafe_expresso.jpg
+    - assets/images/cafe_descafeinado.jpg
